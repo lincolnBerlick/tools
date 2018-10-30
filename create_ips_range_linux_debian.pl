@@ -18,11 +18,11 @@ my $lastipnumber = ($Ips[0] =~ /(\d+$)/); #get the last number of initial_Ip
 	while($lastipnumber < $finalip ){
 
 		 $text .= "iface eth0:$finalip inet static
-				address $Ips[0].$lastipnumber
-				gateway $Ips[1]
-				netmask $Ips[2]
-				dns-nameservers 8.8.8.8 8.8.4.4 \n \n";
-			$lastipnumber++	
+			   address $Ips[0].$lastipnumber
+			   gateway $Ips[1]
+			   netmask $Ips[2]
+			   dns-nameservers 8.8.8.8 8.8.4.4 \n \n";
+	$lastipnumber++	
 
 }
 
